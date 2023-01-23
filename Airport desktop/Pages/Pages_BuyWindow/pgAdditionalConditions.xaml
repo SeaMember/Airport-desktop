@@ -1,0 +1,71 @@
+﻿<Page x:Class="Airport_desktop.Pages_BuyWindow.pgAdditionalConditions"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Airport_desktop.Pages_BuyWindow"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="pgAdditionalConditions">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Content="Назад"
+                Name="btnBack"
+                Click="btnBack_Click"></Button>
+        <StackPanel Grid.Column="0"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Label HorizontalContentAlignment="Center">Напитки</Label>
+            <CheckBox Content="Вода(0.5) 40 руб." Tag="40"  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Вода газированная(0.5) 50 руб." Tag="50"  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Pepsi(0.5) 129 руб." Tag="129"  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Red Bull(0.5) 169 руб." Tag="169"  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Lipton(0.5) 129 руб." Tag="129"  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Sprite(0.5) 129 руб." Tag="129" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Fanta(0.5) 129 руб." Tag="129" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Label HorizontalContentAlignment="Center">Закуски</Label>
+            <CheckBox Content="Печенье(100 г.) 129 руб." Tag="129" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Шоколадка 229 руб." Tag="229" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Конфеты(100 г.) 299 руб." Tag="299" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Яблочные дольки(100 г.) 149 руб." Tag="149" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Бутерброд с ветчиной 239 руб." Tag="139" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Крабовый салат(100 г.) 239 руб." Tag="239" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Мраморная говядина(стейк средней прожарки) 2799 руб." Tag="2799" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="2"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Label HorizontalContentAlignment="Center">Прочее</Label>
+            <CheckBox Content="Одеяло 299 руб." Tag="299" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Подушка 199 руб." Tag="199" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Повязка на глаза 149 руб." Tag="149" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Флаг России(за счёт государства)" Tag="0" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Шапка 199 руб." Tag="1299" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Наушники 159 руб." Tag="159" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+            <CheckBox Content="Электронная книга 599 руб." Tag="599" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+        </StackPanel>
+        <TextBox Name="TotalCostTextBox"
+                     Width="135"
+                     Height="30"
+                     Margin="20"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Bottom"
+                 Grid.Column="1"
+                 Background="White"
+                 Opacity="0.8"></TextBox>
+    </Grid>
+</Page>
